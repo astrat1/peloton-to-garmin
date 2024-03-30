@@ -67,10 +67,10 @@ jobs:
       if: ${{ env.P2G_PELOTON__EMAIL && env.P2G_PELOTON__PASSWORD && env.P2G_GARMIN__EMAIL && env.P2G_GARMIN__PASSWORD }}
       working-directory: /app
       env:
-        P2G_PELOTON__EMAIL: ${{ secrets.P2G_PELOTON__EMAIL }}
-        P2G_PELOTON__PASSWORD: ${{ secrets.P2G_PELOTON__PASSWORD }}
-        P2G_GARMIN__EMAIL: ${{ secrets.P2G_GARMIN__EMAIL }}
-        P2G_GARMIN__PASSWORD: ${{ secrets.P2G_GARMIN__PASSWORD }}
+        P2G_PELOTON__EMAIL2: ${{ secrets.P2G_PELOTON__EMAIL }}
+        P2G_PELOTON__PASSWORD2: ${{ secrets.P2G_PELOTON__PASSWORD }}
+        P2G_GARMIN__EMAIL2: ${{ secrets.P2G_GARMIN__EMAIL }}
+        P2G_GARMIN__PASSWORD2: ${{ secrets.P2G_GARMIN__PASSWORD }}
         TZ: America/Chicago
 
     - name: archive files
